@@ -388,6 +388,23 @@ nav {
 .experience-img-overlay img:hover {
   transform: scale(1.1);
 }
+/* -----page 5---- */
+.video-container {
+  padding-bottom: 1rem;
+}
+.video-container p {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.video-content {
+  position: relative;
+}
+.button-video {
+  position: absolute;
+  right: 1rem;
+  bottom: -1rem;
+  padding: 1rem 1, 5rem;
+}
 @media screen and (min-width: 968px) {
   :root {
     --biggest-font-sie: 4rem;

@@ -40,4 +40,26 @@ var swiper = new Swiper(".discover-container", {
     },
 });
 
+const videoDisplay = document.querySelector("#video-file")
+const videoButton = document.querySelector("#video-button")
+const videoIcon = document.querySelector(".fa-play")
+
+function playPause() {
+    if(videoDisplay.paused) {
+        videoDisplay.play()
+        videoIcon.classList.add("fa-pause")
+        videoIcon.classList.remove("fa-play")
+    } else {
+        videoDisplay.pause()
+        videoIcon.classList.add("fa-play")
+        videoIcon.classList.remove("fa-pause")
+    }
+}
+videoButton.addEventListener("click", playPause)
+
+function defaultVideo() {
+    videoIcon.classList.add("fa-play")
+    videoIcon.classList.remove("fa-pause")
+}
+videoDisplay.addEventListener("ended", defaultVideo)
 
