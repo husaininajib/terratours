@@ -63,3 +63,13 @@ function defaultVideo() {
 }
 videoDisplay.addEventListener("ended", defaultVideo)
 
+const scrollUp = document.querySelector(".scroll-up")
+
+function scrollDisplay() {
+    if(this.scrollY >= 200) {
+        scrollUp.classList.add("show-scroll")
+    } else {
+        scrollUp.classList.remove("show-scroll")
+    }
+}
+window.addEventListener("scroll", scrollDisplay)

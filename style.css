@@ -513,6 +513,78 @@ form input::placeholder {
 .sponsor-container div:hover img {
   filter: invert(0.5);
 }
+.footer-container {
+  row-gap: 5rem;
+}
+.footer-content-container {
+  row-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+.footer-main-title {
+  font-size: var(--h3-font-size);
+  margin-bottom: 0.5rem;
+}
+.footer-card p {
+  margin-bottom: 2rem;
+}
+.footer-social a {
+  color: var(--title-color);
+  font-size: 1.25rem;
+  margin-right: 1.25rem;
+  transition: 0.2s;
+}
+.footer-social a:hover {
+  color: var(--first-color-second);
+}
+.footer-content-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+.footer-subtitle {
+  margin-bottom: 1rem;
+  font-size: var(--h3-font-size);
+}
+.footer-content-list a {
+  margin-bottom: 0.75rem;
+  color: var(--text-color);
+  transition: 0.1s;
+}
+.footer-content-list a:hover {
+  color: var(--title-color);
+}
+.copyright {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.copyright a {
+  color: var(--text-color);
+  font-size: var(--normal-font-size);
+}
+.copyright a:hover {
+  color: var(--first-color-second);
+}
+.scroll-up {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  padding: 0.5rem;
+  background-color: var(--first-color);
+  opacity: 0.9;
+  transition: 0.4s;
+}
+.scroll-up i {
+  color: #fff;
+}
+.scroll-up:hover {
+  color: var(--first-color-alt);
+  opacity: 1;
+}
+.show-scroll {
+  bottom: 5rem;
+}
 @media screen and (min-width: 968px) {
   :root {
     --biggest-font-sie: 4rem;
