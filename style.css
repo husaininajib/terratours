@@ -712,7 +712,8 @@ form input::placeholder {
 
 @media screen and (min-width: 1024px) {
   .container {
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
   }
   section {
   }
@@ -725,3 +726,11 @@ form input::placeholder {
     column-gap: 2rem;
   }
 }
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* For tall screens on mobiles y desktop*/
